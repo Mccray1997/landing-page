@@ -98,27 +98,46 @@ ul{
     gap: 50px;
 }
 
+.info-text{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px
+}
+
 .box{
     display:flex;
     flex-direction:column;
 
-    max-height : 120px;
-    max-width : 120px;
+    max-height : 100px;
+    max-width : 180px;
 
     min-height: 50px;
     min-width: 50px;
 
-    font-size: 20px;
+    font-size: 12px;
 
     border: 1px solid blue;
 }
 
+.info-box{
+    display :flex;
+    flex-direction:column;
+    font-size: 12px;
+
+}
+
+
+
 /* End of CSS for cardTwo */
 
 .cardThree{
+    right: 0;
+    left: 0;
     display:flex;
     width: 100%;
     min-height: 150px;
+    max-height: 250px;
     background-color: gray;
 
     display:flex;
@@ -129,6 +148,8 @@ ul{
 }
 
 .cardFour{
+    left: 0;
+    right: 0;
     display:flex;
     width: 100%;
     height: 150px;
