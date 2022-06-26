@@ -25,7 +25,7 @@ a{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    background-color: navy;
+    background-color: #1f2937;
 }
 
 .logo{
@@ -48,22 +48,58 @@ a{
 
 .button{
     display:flex;
-    color: gray
+    color: blue;
 }
 
-
-
+/** CSS for cardOne **/
 .cardOne{
     display:flex;
     width: 100%;
     height: 200px;
-    background-color: navy;
+    background-color: #1f2937;
 
     display:flex;
     flex-direction: row;
     align-items:center;
     justify-content: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    gap: 50px
 }
+
+.box-image{
+    display:flex;
+    flex-direction:column;
+
+    height: 150px;
+    width: 150px;
+    font-size: 12px;
+
+    border: 1px solid blue;
+    border-radius: 25px;
+
+    background-color: gray;
+    padding: 10px;
+}
+
+.siteInfo{
+    display: flex;
+    flex-direction:column;
+}
+
+.siteInfoTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.siteInfoText{
+    font-size: 20px;
+    color: #f9faf8;
+}
+/** End of CSS for cardOne **/
 
 ul{
     gap: none;
@@ -72,13 +108,18 @@ ul{
 /* CSS for card two */
 .cardTwo{
     display:flex;
-    width: 100%;
-    height: 150px;
+    flex-grow: 1;
 
-    display:flex;
     flex-direction:column;
     align-items: center;
-    justify-content: center
+    justify-content: space-between;
+
+    text-align: center;
+    font-size: 36px;
+    font-weight: extra bold;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .information{
@@ -109,15 +150,14 @@ ul{
     display:flex;
     flex-direction:column;
 
-    max-height : 100px;
-    max-width : 180px;
-
-    min-height: 50px;
-    min-width: 50px;
-
+    height: 150px;
+    width: 150px;
     font-size: 12px;
 
     border: 1px solid blue;
+    border-radius: 25px;
+
+    padding: 10px
 }
 
 .info-box{
@@ -131,35 +171,70 @@ ul{
 
 /* End of CSS for cardTwo */
 
+/** CSS for cardThree **/
 .cardThree{
     right: 0;
     left: 0;
     display:flex;
     width: 100%;
-    min-height: 150px;
-    max-height: 250px;
-    background-color: gray;
+    flex-grow : 2;
+    background-color: #e5e7f6;
 
     display:flex;
     flex-direction:column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 
+    color: #1f291f;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: light;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
+.quote{
+    max-width: 300px;;
+}
+
+/** End of CSS for cardThree **/
+
+/** CSS for cardFour **/
 .cardFour{
     left: 0;
     right: 0;
     display:flex;
     width: 100%;
-    height: 150px;
 
-    display:flex;
+    flex-grow: 1;
     flex-direction:column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 
+    padding-top: 32px;
+    padding-bottom: 75px;
 }
+
+.boxFour{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 30px;
+
+    font-size: 12px;
+
+    border: 1px solid white;
+    background-color: blue;
+
+    color: white;
+
+    align-items: center;
+    padding: 10px
+}
+
+/** End of CSS for cardFour **/
 
 .footer{
   position: fixed;
@@ -170,7 +245,10 @@ ul{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
+  background-color: #1f2937;
+  color:white;
+
+  border-top: auto;
 
    
 }
