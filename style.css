@@ -1,7 +1,11 @@
+
 body{
     display:flex;
     flex-direction:column;
     min-height: 100vh;
+    min-width: 100vh;
+
+    margin: 0;
 }
 
 /* Default setting for all the lists on the page */
@@ -44,11 +48,19 @@ a{
 .body{
     display:flex;
     flex-direction:column;
+    width: 100%;
 }
 
 .button{
-    display:flex;
-    color: blue;
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /** CSS for cardOne **/
@@ -58,15 +70,13 @@ a{
     height: 200px;
     background-color: #1f2937;
 
-    display:flex;
     flex-direction: row;
     align-items:center;
     justify-content: center;
 
     padding-top: 32px;
     padding-bottom: 32px;
-
-    gap: 50px
+    gap: 50px;
 }
 
 .box-image{
@@ -125,11 +135,13 @@ ul{
 .information{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: 36px;
     font-weight: 900;
     text-align: center;
     padding-bottom: 32px;
 
+    gap: 50px;
 }
 
 .info-content{
@@ -140,10 +152,16 @@ ul{
 }
 
 .info-text{
+    margin-top: 10px;
+    padding: 10px;
+
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 50px
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 150px;
 }
 
 .box{
